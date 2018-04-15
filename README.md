@@ -56,7 +56,7 @@ class Timestamp(object):
 class PdPrinter:
     """
     how to use
-    PdPrinter.print_full(data, info=None, max_row=10)  # 不断行打印df和numpy数组, 方便查看数组内容, max_row是打印的行号.
+    PdPrinter.print_full(data, info=None, max_row=10)  # 不断行打印df和numpy数组, 方便查看数组内容, max_row是打印的行数.
     """
 
     @staticmethod
