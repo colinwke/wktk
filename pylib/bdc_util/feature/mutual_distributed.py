@@ -107,7 +107,7 @@ class MutualDistributed(object):
 
 def main():
     # 配置路径
-    folder = r'F:\文档\Tencent Files\891681500\FileRecv' + '\\'
+    folder = r'F:your_folder_path' + '\\'
     train = pd.read_csv(folder + 'verification_new1.csv')
     test = pd.read_csv(folder + 'test_new.csv')
     train_trade = train[train['is_trade'] == 1]
@@ -122,7 +122,7 @@ def main():
     }
     columns = [list(test.columns)[138]]  # plot one column
     # columns = None  # plot all columns
-    save_path = 'F:\桌面\IJCAI\data\pic\ijcai_2018-4-20_ttt'  # 图片保存的路径
+    save_path = 'F:your_saveing_path'  # 图片保存的路径
     mutual_d.hist(dataset_dict, columns=columns, scale_height=True, save_path=save_path)
 
 
